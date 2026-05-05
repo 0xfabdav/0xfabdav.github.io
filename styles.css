@@ -259,8 +259,8 @@ main {
 }
 
 .project-card + .project-card {
-  border-top: 1px solid var(--line);
-  padding-top: 14px;
+  border-top: 0;
+  padding-top: 0;
 }
 
 .project-card a {
@@ -439,6 +439,7 @@ main {
   }
 
   .project-card + .project-card {
+    border-top: 1px solid var(--line);
     padding-top: 16px;
   }
 
