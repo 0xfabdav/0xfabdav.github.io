@@ -30,17 +30,25 @@
             </nav>
 --->
 
-          <a class="pill-btn" href="mailto:info@karlolabs.com">Get in Touch</a>
+          <div class="header-actions">
+            <label class="lang-switch" for="language-select" aria-label="Language selector">
+              <select id="language-select" class="lang-select" aria-label="Language selector">
+                <option value="en">🇬🇧 English</option>
+                <option value="de">🇩🇪 Deutsch</option>
+              </select>
+            </label>
+            <a class="pill-btn" href="mailto:info@karlolabs.com" data-i18n="cta.contact">Get in Touch</a>
+          </div>
 
         </header>
 
         <section class="hero">
-          <h1>We build software for startups and serious teams.</h1>
+          <h1 data-i18n="hero.title">We build software for startups and serious teams.</h1>
           <p>
-            Partner with us to turn ambitious ideas into successful, scalable
-            digital products.
+            <span data-i18n="hero.subtitle">Partner with us to turn ambitious ideas into successful, scalable
+              digital products.</span>
           </p>
-          <a class="pill-btn center" href="#projects">View Our Work</a>
+          <a class="pill-btn center" href="#projects" data-i18n="cta.work">View Our Work</a>
         </section>
       </div>
     </section>
@@ -49,11 +57,11 @@
       <div class="page-wrap">
         <a class="scroll-hint back-hint" href="#hero" aria-label="Back to top">
           <span class="scroll-arrow up" aria-hidden="true">↑</span>
-          <span>Back to top</span>
+          <span data-i18n="cta.backToTop">Back to top</span>
         </a>
 
         <section class="projects">
-          <h2>Featured Projects</h2>
+          <h2 data-i18n="projects.title">Featured Projects</h2>
 
           <div class="project-grid">
             <article class="project-card">
@@ -61,11 +69,9 @@
                 <img src="public/cheflink.png" alt="Cheflink product interface" />
               </div>
               <h3>Cheflink</h3>
-              <p>
-                A comprehensive digital ordering and management system for the
+              <p data-i18n="projects.cheflinkDesc">A comprehensive digital ordering and management system for the
                 gastronomy industry, streamlining operations and enhancing
-                customer experience.
-              </p>
+                customer experience.</p>
             </article>
 
             <article class="project-card">
@@ -73,11 +79,9 @@
                 <img src="public/supplychain.png" alt="Supply(Block)Chain dashboard" />
               </div>
               <h3>Supply(Block)Chain</h3>
-              <p>
-                Transparent supply chain tracking platform leveraging public
+              <p data-i18n="projects.supplyDesc">Transparent supply chain tracking platform leveraging public
                 blockchain technology to record and verify product journey
-                events.
-              </p>
+                events.</p>
             </article>
           </div>
         </section>
@@ -95,12 +99,13 @@
 
           <div class="footer-right">
             <a class="footer-email" href="mailto:info@karlolabs.com">info@karlolabs.com</a>
-            <p>© Copyright Karlo Labs</p>
+            <p data-i18n="footer.copyright">© Copyright Karlo Labs</p>
           </div>
         </footer>
       </div>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
